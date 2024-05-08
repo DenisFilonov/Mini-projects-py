@@ -1,4 +1,3 @@
-import curses
 import curses as cs
 from curses import wrapper as wr
 import queue as qq
