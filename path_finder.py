@@ -19,8 +19,8 @@ my_maze = [
 
 
 def print_maze(maze, std_scr, path=[]):
-    BLUE = curses.color_pair(1)
-    RED = curses.color_pair(2)
+    BLUE = cs.color_pair(1)
+    RED = cs.color_pair(2)
 
     for i, row in enumerate(maze):
         for j, col in enumerate(row):
@@ -96,8 +96,8 @@ def find_neighbors(maze, row, col):
 
 
 def main(std_scr):
-    cs.init_pair(1, curses.COLOR_BLUE, curses.COLOR_BLACK)
-    cs.init_pair(2, curses.COLOR_RED, curses.COLOR_BLACK)
+    cs.init_pair(1, cs.COLOR_BLUE, cs.COLOR_BLACK)
+    cs.init_pair(2, cs.COLOR_RED, cs.COLOR_BLACK)
 
     find_path(my_maze, std_scr)
     std_scr.getch()
